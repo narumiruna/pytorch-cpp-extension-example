@@ -1,1 +1,2 @@
-from _cppexample import normalize
+from _cppexample import *
+
