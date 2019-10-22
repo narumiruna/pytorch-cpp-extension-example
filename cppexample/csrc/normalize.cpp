@@ -3,9 +3,7 @@
 #include <torch/extension.h>
 
 torch::Tensor normalize(torch::Tensor x) {
-  x = x - torch::mean(x);
-  x = x / torch::std(x);
-  return x;
+  return at::_cast_Float(x).sub(x.mean()).div(x.std());
 }
 
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
