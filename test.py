@@ -6,7 +6,7 @@ def main():
     y = normalize(x)
     print(y)
 
-    x = gaussian(x, x, x, x)
+    x = gaussian(x, 0.0, 1.0, 1.0)
     print(x)
 
 if __name__ == '__main__':

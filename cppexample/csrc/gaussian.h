@@ -1,4 +1,3 @@
 #include <torch/extension.h>
 
-torch::Tensor gaussian(torch::Tensor x, torch::Tensor mu, torch::Tensor sigma, torch::Tensor a);
-
+torch::Tensor gaussian(torch::Tensor x, float mu, float sigma, float a);
