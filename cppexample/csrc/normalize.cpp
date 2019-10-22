@@ -7,5 +7,5 @@ torch::Tensor normalize(torch::Tensor x) {
 }
 
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
-  m.def("normalize", &normalize, "d sigmoid function");
+  m.def("normalize", &normalize, "Normalize a tensor");
 }
